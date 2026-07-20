@@ -7,12 +7,6 @@ import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * Externalised JWT settings, bound from the {@code security.jwt.*} configuration namespace.
- *
- * <p>The secret and token lifetimes are intentionally kept out of the code so they can differ per
- * environment (see {@code application-dev.yml} / {@code application-prod.yml}).
- */
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "security.jwt")
